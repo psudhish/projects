@@ -1,0 +1,920 @@
+<!-- this is the website homepage-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--general stuff you don't need to know-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--title that shows up in the tab-->
+    <title>BoostNB HomePage</title>
+
+    <!-- this is linking the css files to the html file-->
+    <link rel="stylesheet" href="General-Styles/header.css" />
+    <link rel="stylesheet" href="index-styles/general.css" />
+    <link rel="stylesheet" href="General-Styles/sidebar.css" />
+    <link rel="stylesheet" href="index-styles/mainbody.css" />
+    <link rel="stylesheet" href="index-styles/indicator-highlight-boxes.css" />
+
+    <!--java script file linking-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- This is the favicon that shows up in the browser tab -->
+    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+
+    <!-- These are the Montserrat fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--back to top button-->
+    <a class="back-to-top" href="#top">Back To Top</a>
+
+    <!--header-->
+    <div class="header">
+      <!--logo section-->
+      <div class="left-section">
+        <!--Boost Logo linking to homepage when clicked-->
+        <a href="index.html"
+          ><img class="boost-logo" src="images/logo.png" alt="BoostNB logo"
+        /></a>
+      </div>
+
+      <!--button section-->
+      <div class="right-section">
+        <div class="header-buttons">
+          <a href="index.html">Homepage</a>
+        </div>
+
+        <!--dropdown menu 'key indicators'-->
+        <div class="dropdown">
+          <button class="header-buttons">Key Indicators</button>
+          <div class="dropdown-content">
+            <a href="Goal Pages/GDP.html">GDP</a>
+            <a href="Goal Pages/Population.html">Population</a>
+            <a href="Goal Pages/Trade.html">Trade</a>
+            <a href="Goal Pages/Natural-Resources.html">Natural Resources</a>
+            <a href="Goal Pages/Investment.html">Investment</a>
+            <a href="Goal Pages/Labour.html">Labour</a>
+            <a href="Goal Pages/Social-Environmental.html">Social and Environmental Welfare</a>
+          </div>
+        </div>
+
+        <!--contact us button-->
+        <div class="header-buttons">
+          <a href="ContactUs.html">Contact Us</a>
+        </div>
+
+        <!--dropdown menu 'more'-->
+        <div class="dropdown">
+          <button class="header-buttons">More</button>
+          <div class="dropdown-content">
+            <a href="AboutUs.html">About Us</a>
+            <a href="Archives.html">Archives</a>
+            <a href="Background.html">Background</a>
+            <a href="Glossary.html">Glossary</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!--Header Hamburger menu-->
+    <!--this code is from a youtube tutorial https://youtu.be/EqzUcMzfV1w-->
+    <div class="menu-wrap">
+      <!--checkbox that toggles the dropdown display-->
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="Goal Pages/GDP.html">GDP</a></li>
+             <li><a href="Goal Pages/Population.html">Population</a></li> 
+             <li><a href="Goal Pages/Trade.html">Trade</a></li>
+             <li><a href="Goal Pages/Natural-Resources.html">Natural Resources</a></li>
+             <li><a href="Goal Pages/Investment.html">Investment</a></li>
+             <li><a href="Goal Pages/Labour.html">Labour</a></li>
+             <li><a href="Goal Pages/Social-Environmental.html"
+                >Social and Environmental Welfare</a></li>
+              <li><a href="Background.html">Background</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+              <li><a href="Glossary.html">Glossary</a></li>
+              <li><a href="Archives.html">Archive</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--navigation bar-->
+    <div class="sidebar">
+      <div></div>
+      <a class="sidebar-buttons" href="#gdp">GDP</a>
+      <a class="sidebar-buttons" href="#population">Population</a>
+      <a class="sidebar-buttons" href="#trade">Trade</a>
+      <a class="sidebar-buttons" href="#natural-resources">Natural Resources</a>
+      <a class="sidebar-buttons" href="#investment">Investment</a>
+      <a class="sidebar-buttons" href="#labour">Labour</a>
+      <a class="sidebar-buttons" href="#social-environmental"
+        >Social and Environmental Welfare</a
+      >
+    </div>
+
+    <!--SideBar Hamburger Menu-->
+    <!--taken from a youtube tutorial https://youtu.be/EqzUcMzfV1w-->
+    <div class="menu-wrap2">
+      <input type="checkbox" class="toggler2">
+      <div class="hamburger2"><div></div></div>
+      <div class="menu2">
+        <div>
+          <div>
+            <ul>
+              <!-- These are the menu Links -->
+             <li><a href="#gdp">GDP</a></li>
+             <li><a href="#population">Population</a></li> 
+             <li><a href="#trade">Trade</a></li>
+             <li><a href="#natural-resources">Natural Resources</a></li>
+             <li><a href="#investment">Investment</a></li>
+             <li><a href="#labour">Labour</a></li>
+             <li><a href="#social-environmental"
+              >Social and Environmental Welfare</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--main body-->
+
+    <!-- intro text, image, etc...-->
+    <div class="intro">
+      <!--image-->
+      <img
+        src="images/hopewellrocks.jpg"
+        alt="hopewellrocks"
+      />
+        <!--The Intro Title-->
+        <h1 >BoostNB Economic Dashboard</h1>
+        <!--The BoostNB Description in the intro-->
+        <p>
+          BoostNB is a dashboard of economic indicators that provides
+          straightforward, fact-based information about the New Brunswick economy
+          to the average New Brunswicker. This website is updated periodically by
+          post-secondary students in New Brunswick.
+        </p>
+
+      <!--photo credits-->
+      <div class="credits">Photo Credits: Peter Lloyd on Unsplash</div>
+    </div>
+
+    <div class="legend"> <h3>Legend</h3> <P>The Highlight Box Colour Indicates The Status of the Graphs Parent Report</P>
+     <p id="one">Progressing</p>  <p id="two">Progressing Not on Track</p>  <p id="three">Not Progressing</p>
+      
+    </div>
+    <!--goal grouping (GDP)-->
+    <div class="highlights">
+    <div class="gdp" id="gdp">
+      <!--title and below title text 'GDP'-->
+      <div class="indicator-intro">
+        GDP (Gross Domestic Product)
+        <p>GDP Highlights Include: GDP Per Capita, Real GDP Growth, and Debt-to-GDP Ratio </p>
+      </div>
+      <!--container for the goal grouping excluding the title and text below-->
+      <div class="indicator-body">
+           <!--each box is a highlight box-->
+        <div class="highlight-box1" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Provincial GDP Per Capita</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+  
+              <canvas width="300px" height="225px" id="barChart"></canvas>
+                
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+            Graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>-1.05%</div>
+              <p>GDP Growth</p>
+            </div>
+            
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>	&#8595 2.96%</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box2" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+            <canvas width="300px" height="225px" id="myChart1"></canvas>                     
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+            graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 1.7%</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box3" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Debt-to-GDP Ratio</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->           
+            <canvas width="300px" height="225px" id="myChart2"></canvas>            
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    <!--goal grouping-->
+    <div class="population" id="population">
+      <!--title and below title text 'population'-->
+      <div class="indicator-intro">
+        Population
+        <p>Population Highlights Include: Population Growth rates, Sources of Population Changes, and Provincial Average and Median Age </p>
+      </div>
+      <div class="indicator-body">
+        
+        <div class="highlight-box1" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Population Growth Rates</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+            <canvas width="300px" height="225px" id="myChart3"></canvas>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box2" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Sources of Population Change</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            <canvas width="300px" height="225px" id="myChart4"></canvas>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box3" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Provincial Average and Median Age</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+            <canvas width="300px" height="225px" id="myChart5"></canvas>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!--goal grouping-->
+    <div class="trade" id="trade">
+      <!--title and below title text 'Trade'-->
+      <div class="indicator-intro">
+        Trade
+        <p>Trade Highlights Include: Trade Balances,  </p>
+      </div>
+      <div class="indicator-body">
+       
+        <div class="highlight-box1" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Trade Balances</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+              <canvas width="300px" height="225px" id="myChart6"></canvas>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box2" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB value of Exports and Imports</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+            <canvas width="300px" height="225px" id="myChart7"></canvas>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box3" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Number of exporting firms</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+            <canvas width="300px" height="225px" id="myChart8"></canvas>       
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--goal grouping-->
+    <div class="natural-resources" id="natural-resources">
+      <!--title and below title text 'Natural Resources'-->
+      <div class="indicator-intro">
+        Natural Resources
+        <p>Natural Resource Highlights Include: Forestry, Mining and Fisheries and Agriculture </p>
+      </div>
+      <div class="indicator-body">
+       
+        <div class="highlight-box1" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Forestry</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+            <canvas width="300px" height="225px" id="myChart9"></canvas>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box2" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Mining</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+              <canvas width="300px" height="225px" id="myChart10"></canvas>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box3" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">Fisheries and Agriculture</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            <canvas width="300px" height="225px" id="myChart11"></canvas>            
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--goal grouping-->
+    <div class="investment" id="investment">
+      <!--title and below title text 'Investment'-->
+      <div class="indicator-intro">
+        Investment
+        <p>Investment Highlights Include: R&D Per Capita </p>
+      </div>
+      <div class="indicator-body">
+        
+        <div class="highlight-box1" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">R&D Per Capita</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->            
+            <canvas width="300px" height="225px" id="myChart12"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box2" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            
+              <canvas id="barChart"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box3" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            
+              <canvas id="barChart"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--goal grouping-->
+    <div class="labour" id="labour">
+      <!--title and below title text 'Labour'-->
+      <div class="indicator-intro">
+        Labour
+        <p>Labour Highlights Include: </p>
+      </div>
+      <div class="indicator-body">
+       
+        <div class="highlight-box1" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            
+              <canvas id="barChart"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box2" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            
+              <canvas id="barChart"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box3" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            
+              <canvas id="barChart"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--goal grouping-->
+    <div class="social-environmental" id="social-environmental">
+      <!--title and below title text 'Social-environmental'-->
+      <div class="indicator-intro">
+        Social and Environmental Welfare
+        <p>Social and Environmental Welfare Highlights Include: </p>
+      </div>
+      <div class="indicator-body">
+       
+        <div class="highlight-box1" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            
+              <canvas id="barChart"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box2" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            
+              <canvas id="barChart"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box3" >
+          <!--highlight box title-->
+          <div class="highlight-box-title">NB Real GDP Growth</div>
+          <!--section of the highlight box for the graph-->
+          <div class="graph-container">
+            <!--JavaScript stuff-->
+            
+              <canvas id="barChart"></canvas>
+            
+            <script src="charts.js"></script>
+          </div>
+          <!--description below graph-->
+          <div class="graph-description">
+           graph description
+            <!--reference for graph info-->
+            <div class="graph-reference">CanSim Table reference</div>
+          </div>
+          <!--highlight box footer-->
+          <div class="highlight-box-footer">
+            <!--most recent year number-->
+            <div class="current-number">
+              <div>Number</div>
+              <p>unit</p>
+            </div>
+            <!--y/y change box-->
+            <div class="annual-change">	
+              <div>&#8593 %</div>
+              <p>y/y % change</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- footer with socials and stuff-->
+    <div class="footer">
+      <p>Follow us on Social Media!</p>
+      <!--each social link and icon-->
+      <a target="_blank" href="https://www.instagram.com/boostnewbrunswick/"
+        ><img src="images/instagram-logo.jpeg" alt="Instagram Logo" width="50%"
+      /></a>
+      <a target="_blank" href="https://twitter.com/BoostNb"
+        ><img src="images/twitter-logo.png" alt="Twitter Logo"
+      /></a>
+      <a target="_blank" href="https://www.linkedin.com/company/boostnb/"
+        ><img src="images/linkedin-logo.png" alt="LinkedIn Logo"
+      /></a>
+      <a target="_blank" href="https://www.facebook.com/BoostNB"
+        ><img src="images/facebook-logo.jpeg" alt="Facebook Logo"
+      /></a>
+    </div>
+  </body>
+</html>
